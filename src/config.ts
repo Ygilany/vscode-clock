@@ -12,7 +12,6 @@ export function getConfig(): Config {
     configuration = workspace.getConfiguration('clock');
 
     } catch (error) {
-        console.log(error);
     }
 
     return {

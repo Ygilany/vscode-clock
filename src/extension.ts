@@ -15,7 +15,6 @@ export function activate(context: vscode.ExtensionContext) {
 	function updateTime() {
 		setInterval(()=> {
 			statusbar.text = getDateTime();
-			console.log(statusbar.text)
 		}, 1000);
 	}
 }
