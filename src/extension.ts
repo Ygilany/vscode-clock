@@ -1,19 +1,6 @@
 import * as vscode from 'vscode';
-import { getDateTime } from './timeFormatted';
-
+import { ClockStatusBar } from './clockStatusBar';
 
 export function activate(context: vscode.ExtensionContext) {
-	const statusbar: vscode.StatusBarItem = vscode.window
-		.createStatusBarItem(vscode.StatusBarAlignment.Right, -1000); // higher number means more to the left
-	
-	statusbar.show();
-
-	context.subscriptions.push(statusbar);
-	updateTime();
-
-	function updateTime() {
-		setInterval(()=> {
-			statusbar.text = getDateTime();
-		}, 1000);
-	}
+	context.subscriptions.push(new ClockStatusBar());
 }
