@@ -1,65 +1,32 @@
 # vscode-clock README
 
-This is the README for your extension "vscode-clock". After writing up a brief description, we recommend including the following sections.
+A configurable clock to display on the status bar. Nice for when you use VSCode in Full-screen mode.
 
 ## Features
-
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
-
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+change the format of the time with [moment.js's date formats](https://momentjs.com/docs/#/displaying/);
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+The only dependeny here is moment.js
 
 ## Extension Settings
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
 This extension contributes the following settings:
 
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
+* `clock.datetimeFormat`: allows you configure the prefered format of the date and time.
 
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
+This is the first extension I ever built. for some reason it just lied there on my computer. Time for publishing.
 
 ### 1.0.0
 
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
+Initial release of VSCode-Clock
 
 -----------------------------------------------------------------------------------------------------------
+Link to the repo is [repository](//github.com/ygilany/vscode-clock).
 
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on OSX or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on OSX or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (OSX) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+to report any issues, kindly create an issue on the [repository's issue tracker](//github.com/ygilany/vscode-clock).
 
 **Enjoy!**
