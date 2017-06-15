@@ -3,7 +3,7 @@
     "displayName": "vscode-clock",
     "icon": "images/clock.png",
     "description": "Display a clock in the status bar",
-        "author": {
+    "author": {
         "name": "Yahya Gilany",
         "email": "yahya.gilany@live.com"
     },
@@ -14,7 +14,7 @@
         "type": "git",
         "url": "https://github.com/Ygilany/vscode-clock"
     },
-    "version": "0.0.1",
+    "version": "1.0.0",
     "publisher": "yahya-gilany",
     "engines": {
         "vscode": "^1.10.0"
