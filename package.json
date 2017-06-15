@@ -1,7 +1,19 @@
 {
     "name": "vscode-clock",
     "displayName": "vscode-clock",
-    "description": "This extenstion displays a clock on the status bar",
+    "icon": "images/clock.png",
+    "description": "Display a clock in the status bar",
+        "author": {
+        "name": "Yahya Gilany",
+        "email": "yahya.gilany@live.com"
+    },
+    "bugs": {
+        "url": "https://github.com/Ygilany/vscode-clock/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Ygilany/vscode-clock"
+    },
     "version": "0.0.1",
     "publisher": "yahya-gilany",
     "engines": {
