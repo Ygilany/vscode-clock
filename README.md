@@ -29,4 +29,8 @@ Link to the repo is [repository](//github.com/ygilany/vscode-clock).
 
 to report any issues, kindly create an issue on the [repository's issue tracker](//github.com/ygilany/vscode-clock).
 
+## License
+
+MIT © Yahya Gilany
+
 **Enjoy!**
