@@ -1,6 +1,6 @@
 import { workspace } from 'vscode';
 
-const DEFAULT_DATETIME_FORMAT = `h:mm:ss a`;
+const DEFAULT_DATETIME_FORMAT = `hh:mm:ss a`;
 
 export interface Config {
     datetimeFormat: string
