@@ -15,7 +15,17 @@
     ],
     "main": "./out/src/extension",
     "contributes": {
-        "commands": []
+        "configuration": {
+            "type": "object",
+            "title": "Clock Configurations",
+            "properties": {
+                "clock.datetimeFormat": {
+                    "type": "string",
+                    "default": "hh:mm:ss a",
+                    "description": "The default Time Format"
+                }
+            }
+        }
     },
     "scripts": {
         "vscode:prepublish": "tsc -p ./",
