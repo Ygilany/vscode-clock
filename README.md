@@ -1,7 +1,7 @@
 # vscode-clock README
 
-[![Installs](http://vsmarketplacebadge.apphb.com/installs/yahya-gilany.vscode-clock.svg
-)](https://marketplace.visualstudio.com/items?itemName=yahya-gilany.vscode-clock)
+[![Installs](//vsmarketplacebadge.apphb.com/installs/yahya-gilany.vscode-clock.svg
+)](//marketplace.visualstudio.com/items?itemName=yahya-gilany.vscode-clock)
 
 A configurable clock to display on the status bar. Nice for when you use VSCode in Full-screen mode.
 
