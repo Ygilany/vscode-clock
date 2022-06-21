@@ -33,7 +33,7 @@
       "properties": {
         "clock.datetimeFormat": {
           "type": "string",
-          "default": "hh:mm:ss a",
+          "default": "hh:mm a",
           "description": "The default Time Format"
         }
       }
