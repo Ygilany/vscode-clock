@@ -1,58 +1,66 @@
 {
-    "name": "vscode-clock",
-    "displayName": "VSCode Clock",
-    "icon": "images/clock.png",
-    "description": "Display a clock in the status bar",
-    "author": {
-        "name": "Yahya Gilany",
-        "email": "yahya.gilany@live.com"
-    },
-    "bugs": {
-        "url": "https://github.com/Ygilany/vscode-clock/issues"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/Ygilany/vscode-clock"
-    },
-    "version": "1.0.1",
-    "publisher": "yahya-gilany",
-    "engines": {
-        "vscode": "^1.10.0"
-    },
-    "categories": [
-        "Other"
-    ],
-    "activationEvents": [
-        "*"
-    ],
-    "main": "./out/src/extension",
-    "contributes": {
-        "configuration": {
-            "type": "object",
-            "title": "Clock Configurations",
-            "properties": {
-                "clock.datetimeFormat": {
-                    "type": "string",
-                    "default": "hh:mm:ss a",
-                    "description": "The default Time Format"
-                }
-            }
+  "name": "vscode-clock",
+  "displayName": "VSCode Clock",
+  "icon": "images/clock.png",
+  "description": "Display a clock in the status bar",
+  "author": {
+    "name": "Yahya Gilany",
+    "email": "yahya.gilany@live.com"
+  },
+  "bugs": {
+    "url": "https://github.com/Ygilany/vscode-clock/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ygilany/vscode-clock"
+  },
+  "version": "1.0.1",
+  "publisher": "yahya-gilany",
+  "engines": {
+    "vscode": "^1.68.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "configuration": {
+      "type": "object",
+      "title": "Clock Configurations",
+      "properties": {
+        "clock.datetimeFormat": {
+          "type": "string",
+          "default": "hh:mm:ss a",
+          "description": "The default Time Format"
         }
-    },
-    "scripts": {
-        "vscode:prepublish": "tsc -p ./",
-        "compile": "tsc -watch -p ./",
-        "postinstall": "node ./node_modules/vscode/bin/install",
-        "test": "node ./node_modules/vscode/bin/test"
-    },
-    "devDependencies": {
-        "@types/mocha": "^2.2.32",
-        "@types/node": "^6.0.40",
-        "mocha": "^2.3.3",
-        "typescript": "^2.0.3",
-        "vscode": "^1.0.0"
-    },
-    "dependencies": {
-        "moment": "^2.18.1"
+      }
     }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.68.0",
+    "@types/glob": "^7.2.0",
+    "@types/mocha": "^9.1.1",
+    "@types/node": "16.x",
+    "@typescript-eslint/eslint-plugin": "^5.27.0",
+    "@typescript-eslint/parser": "^5.27.0",
+    "eslint": "^8.16.0",
+    "glob": "^8.0.3",
+    "mocha": "^10.0.0",
+    "typescript": "^4.7.2",
+    "@vscode/test-electron": "^2.1.3"
+  },
+  "dependencies": {
+    "moment": "^2.18.1"
+  }
 }

@@ -1,0 +1,31 @@
+{
+    "root": true,
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "@typescript-eslint/naming-convention": "warn",
+        "@typescript-eslint/semi": "warn",
+        "curly": "warn",
+        "eqeqeq": "warn",
+        "no-throw-literal": "warn",
+        "indent": [ 2, 2, {
+            "SwitchCase": 1,
+            "offsetTernaryExpressions": true
+        }],
+        "quotes": [ 2, "backtick" ],
+        "semi": [ 2, "always" ],
+        "semi-spacing": 2,
+        "semi-style": [ 2, "last" ]
+    },
+    "ignorePatterns": [
+        "out",
+        "dist",
+        "**/*.d.ts"
+    ]
+}

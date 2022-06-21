@@ -1,9 +1,8 @@
-import * as moment from 'moment';
-import { Config, getConfig } from './config';
+import * as moment from "moment";
+import { getConfig } from "./config";
 
-
-const datetime_format: string = getConfig().datetimeFormat;
+const getDatetimeFormat: string = getConfig().datetimeFormat;
 
 export function getDateTime(): string {
-  return moment().format(datetime_format);
+  return moment().format(getDatetimeFormat);
 }
