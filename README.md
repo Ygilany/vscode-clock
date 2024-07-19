@@ -14,9 +14,8 @@ This extension contributes the following settings:
 
 * `clock.datetimeFormat`: allows you configure the prefered format of the date and time.
 
-
-## Release Notes and changelog.
-- Visit [the Changelog document](CHANGELOG.md)
+## Release Notes and changelog
+* Visit [the Changelog document](CHANGELOG.md)
 
 -----------------------------------------------------------------------------------------------------------
 Link to the repo is [repository](//github.com/ygilany/vscode-clock).
