@@ -12,7 +12,8 @@ The only dependency here is moment.js
 
 This extension contributes the following settings:
 
-* `clock.datetimeFormat`: allows you configure the prefered format of the date and time.
+* `clock.datetimeFormat`: allows you configure the preferred format of the date and time.
+* `clock.timezone`: allows you to set a specific timezone
 
 ## Release Notes and changelog
 * Visit [the Changelog document](CHANGELOG.md)
