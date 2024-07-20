@@ -1,5 +1,4 @@
 import * as vscode from "vscode";
-
 import { getDateTime } from "./timeFormatted";
 
 export class ClockStatusBar {
